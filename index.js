@@ -4,7 +4,7 @@ const { exec } = require("child_process");
 const path = require("path");
 const fs = require("fs");
 
-const token = "8167212753:AAF-fxoMcnleEGUIkvLJ8FCDzGxSSnnrC8w";
+const token = process.env.TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 bot.on("message", async (msg) => {
