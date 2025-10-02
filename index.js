@@ -4,7 +4,7 @@ const { exec } = require("child_process");
 const path = require("path");
 const fs = require("fs");
 
-const token = "1251223589:AAFt2wVMEnkN2um7hiE-VXW6G288Pm3w8UU";
+const token = "8167212753:AAF-fxoMcnleEGUIkvLJ8FCDzGxSSnnrC8w";
 const bot = new TelegramBot(token, { polling: true });
 
 bot.on("message", async (msg) => {
@@ -27,7 +27,7 @@ bot.on("message", async (msg) => {
         try {
           // Send video to Telegram
           await bot.sendVideo(chatId, output, {
-            caption: `Link: ${text}\n🎥 From YouTube Shorts by @new_rxz_bot`,
+            caption: `Link: ${text}\n🎥 From YouTube Shorts by @ytshorts_rxbot`,
           });
 
           // Delete file after sending
